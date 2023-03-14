@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+       <!--button-->
+        <div class="btn btn-group">
+             <!--
+            btn-group-lg
+            btn-group-bertical (to use this remode default value btn)
+        -->
+            <button class = "btn  btn-link">Test butten like a link</button> <!--botton looks like a link-->
+            <a class ="btn btn-primary" href="#">Test</a>
+            <a class = "btn btn-primary btn-sm">Test small btn</a>
+            <button class = "btn btn-outline-secondary">Test outline</button>
+            <button class = "btn btn-primary disabled">Test disabled</button>
+            <button class = "btn btn-outline-primary"
+            data-bs-toggle="button"
+            >Test</button> <!--works with script link-->
+        </div>
+
+        <!--Allert-->
+        <div class="alert alert-success alert-dismissible" role="alert"><h1>Alert</h1>
+            <a href="#" class ="alert-link">Go here to find out more</a>
+            <button class ="btn-close" aria-label="close" data-bs-dismiss="alert"></button><!--works with script link-->
+        </div>
+
+
+        <!--card-->
+        <div class="card-group">
+
+            <div class="card" style = "width: 200px;">
+                <h3 class = "card-header">Header</h3>
+                <!--img in the top of the card-->
+                <!--<img class = "card-img-top" src="../Inlämning1/images/Femtonspel.png" alt="test img">-->
+                <div class="card-body">
+                    <h2 class="card-title">Title</h2>
+                    <span class="card-subtile">Subtile</span>
+                    <div class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio ipsam beatae ex impedit et expedita itaque at accusamus quidem dignissimos minus optio, suscipit omnis modi iure labore aperiam fuga? 
+                    </div>
+                    <!--for text to show on a image place a image link in the before body with card-img, then type card-img-overlay after "card-body" and style ="color: white;" -->
+                </div>
+                <!--img in the bottom of the card-->
+               <img class = "card-img-bottom" src="../Inlämning1/images/Femtonspel.png" alt="test img">
+               <div class = "card-footer">Footer</div> 
+            </div>
+
+            <div class="card" style = "width: 200px;">
+                <h3 class = "card-header">Header</h3>
+                
+                <div class="card-body">
+                    <h2 class="card-title">Title</h2>
+                    <span class="card-subtile">Subtile</span>
+                    <div class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio ipsam beatae ex impedit et expedita itaque at accusamus quidem dignissimos minus optio, suscipit omnis modi iure labore aperiam fuga? 
+                    </div>
+                   
+                </div>
+        
+               <div class = "card-footer">Footer</div>
+    
+               
+            </div>
+
+            <div class="card" style = "width: 200px;">
+                <h3 class = "card-header">Header</h3>
+                
+                <div class="card-body">
+                    <h2 class="card-title">Title</h2>
+                    <span class="card-subtile">Subtile</span>
+                    <div class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio ipsam beatae ex impedit et expedita itaque at accusamus quidem dignissimos minus optio, suscipit omnis modi iure labore aperiam fuga? 
+                    </div>
+                   
+                </div>
+        
+               <div class = "card-footer">Footer</div>
+    
+               
+            </div>
+        </div>
+
+
+        <!--Modal 
+            works like card-->
+        <button class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Open</button> 
+        <!--a button to open the modal-->
+
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-dialog-centered"> <!--modal-dialog-scrollable to make the large text scrollable, there are other method to change the size-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Header</h1>
+                        <div class="btn-close" data-bs-dismiss="modal"></div>
+                    </div>
+                    <div class="modal-body">body</div>
+                    <div class="modal-footer"> <!--add a button to footer that closes the modal-->
+                        <button class="btn btn-primary" data-bs-dismiss="modal">close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        
+
+    
+    </div>
+
+</body>
+</html>
