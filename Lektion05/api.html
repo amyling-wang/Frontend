@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+    <script src="api.js"></script>
+
+    <script>
+        
+        if (Modernizr.flash) {
+        console.log("Flash is supported");
+        } else {
+        console.log("Flash is not supported");
+
+        if (Modernizr.batteryapi) {
+            console.log("YES - batteryapi is supported");
+        } else {
+            console.log("No - batteryapi is not supported");
+        }
+
+        Modernizr.on('apng', function (result) {
+            if (result) {
+                console.log("YES - Animated PNG is supported");
+
+            } else {
+                console.log("No - Animated PNG is not supported");
+
+            }
+        });
+        if (Modernizr.geolocation) {
+            console.log("YES - geolocation is supported");
+        } else {
+            console.log("No - geolocation is not supported");
+        }
+
+        if (Modernizr.fetch) {
+            console.log("YES - fetch API is supported");
+
+        } else {
+            console.log("No - fetch API is not supported");
+
+        }
+
+    }
+    </script>
+    
+    
+</body>
+</html>

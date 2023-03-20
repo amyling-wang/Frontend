@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        localStorage.setItem("name", "Ling")
+        name = localStorage.getItem("name")
+        console.log(name);
+
+        localStorage.setItem("email", "amyling.wang@hotmail.com")
+        localStorage.setItem("mobile", "076382974")
+
+        for(let i =0; i < localStorage.length; i++){
+            console.log(localStorage.key(i))
+        }
+
+        localStorage.removeItem("mobile")
+        console.log(localStorage.getItem("mobile")) //null
+
+        localStorage.clear();
+        const arr = ['a', 'b', 'c'] 
+
+        localStorage.setItem("myArr", arr);//en sträng spraras
+
+        localStorage.setItem("myArr", JSON.stringify(arr)) //en stäng spraras [a, b, c]
+
+        let myArr = localStorage.getItem("myArr")
+        console.log(myArr) //en sträng returneras 
+        console.log(myArr[0])//[
+
+        myArr = JSON.parse(localStorage.getItem("myArr"))
+        console.log(myArr)
+        console.log(myArr[0])
+
+        let obj ={
+            prop1 : "A",
+            prop2:"B",
+            propc3: "C"
+        }
+        console.log(obj)
+        localStorage.setItem("obj", JSON.stringify(obj))
+
+        const getMyObj = JSON.parse(localStorage.getItem("obj"))
+        console.log(getMyObj)
+
+
+</script>
+    
+</body>
+</html>
