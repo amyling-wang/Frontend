@@ -16,7 +16,7 @@ const api_url = 'https://fakestoreapi.com/products'
                         <p class="card-text" >${product.description}</p>
                         <p class="card-text" >${product.price} $</p>
                         <p class="card-text">Betyg: ${product.rating.rate} (${product.rating.count} recensioner)</p>
-                        <a href="#" class="btn btn-success">Lägg till i kundvagn</a>
+                        <a href="order.html" class="btn btn-success">Lägg till i kundvagn</a>
                     
                     </div>
                 </div>
